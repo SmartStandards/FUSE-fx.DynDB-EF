@@ -9,9 +9,11 @@
     <Import_RootNamespace>System</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Persistence\EfRepository1.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Persistence\EfRepository.cs" />
+    <Compile Include="..\DynDB-EF\Persistence\EfUniversalRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Persistence\EfRepository1_Alt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Persistence\EfRepositoryBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Persistence\FilterExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StringExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Web\EfFuseController.cs" />
   </ItemGroup>
